@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react"; //imports
 import background from "./assets/images/image2.png";
 import playerImg from "./assets/images/player4.png";
 import obstacleImg from "./assets/images/obs2.png";
@@ -28,12 +28,14 @@ const Game = () => {
       // Play music after a user interaction to bypass autoplay restrictions
       const playAudio = () => {
         if (audio.paused) {
-          audio.play().catch((error) => console.error("Audio play error:", error));
+          audio
+            .play()
+            .catch((error) => console.error("Audio play error:", error));
         }
       };
 
       window.addEventListener("click", playAudio);
-      window.addEventListener("keydown", playAudio); 
+      window.addEventListener("keydown", playAudio);
 
       return () => {
         window.removeEventListener("click", playAudio);
@@ -87,7 +89,9 @@ const Game = () => {
         if (event.key === "ArrowLeft") {
           setPlayerX((prevX) => Math.max(0, prevX - playerSpeed));
         } else if (event.key === "ArrowRight") {
-          setPlayerX((prevX) => Math.min(gameWidth - playerSize, prevX + playerSpeed));
+          setPlayerX((prevX) =>
+            Math.min(gameWidth - playerSize, prevX + playerSpeed)
+          );
         }
       }
     };
