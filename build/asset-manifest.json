@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/static/js/main.c59ce451.js",
+    "static/media/backmusic.mp3": "/static/media/backmusic.95e078fe1550d784ac32.mp3",
+    "static/media/player4.png": "/static/media/player4.7ed8c4519f1ec8a4cf82.png",
+    "static/media/image2.png": "/static/media/image2.218ff7d4748ac29e9928.png",
+    "static/media/obs2.png": "/static/media/obs2.443a6ee993b487a630ba.png",
+    "static/media/obstouch.mp3": "/static/media/obstouch.b9ec6cac829fb4ddd2b5.mp3",
+    "index.html": "/index.html",
+    "main.c59ce451.js.map": "/static/js/main.c59ce451.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c59ce451.js"
+  ]
+}
